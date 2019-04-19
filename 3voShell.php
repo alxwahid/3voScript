@@ -839,7 +839,7 @@ echo "<li><a href='?dir=$dir&do=dos'>DDOS v2</a>*</li>";
 echo "<li><a href='?dir=$dir&do=zip'>Zip Menu</a>*</li>";
 echo "<li><a href='?dir=$dir&do=contact'>Upgrade Tools</a>*</li>";
 echo "<li><a href='?dir=$dir&do=log_hunt'>Log-Hunter</a>*</li>";
-echo "<li><a style='color: red;' href='?logout=true'>Logout</a>*</li><audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio><br>";
+echo "<li><a style='color: red;' href='?logout=true'>Logout</a>*</li><br>";
 echo "</ul>";
 echo "</center>";
 echo "<hr>";
