@@ -12,6 +12,7 @@ error_reporting(E_ALL);
 @ini_set('output_buffering',0);
 @ini_set('display_errors', 0);
 @set_time_limit(0);
+@ignore_user_abort(TRUE);
 @set_magic_quotes_runtime(0);
 @define('VERSION', '3.0');
 @clearstatcache();
@@ -839,7 +840,6 @@ echo "<li><a href='?dir=$dir&do=zip'>Zip Menu</a>*</li>";
 echo "<li><a href='?dir=$dir&do=contact'>Upgrade Tools</a>*</li>";
 echo "<li><a href='?dir=$dir&do=log_hunt'>Log-Hunter</a>*</li>";
 echo "<li><a style='color: red;' href='?logout=true'>Logout</a>*</li><br>";
-	<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
 echo "</ul>";
 echo "</center>";
 echo "<hr>";
