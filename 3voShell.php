@@ -559,6 +559,7 @@ switch ($_POST['method']) {
          <option value="2"><b>DECRYPT</b></option>
       </select>
       <input type="submit" name="submit" class="submite" value="LAUNCH!" />
+<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
 </form>
 <?php
 }?>
