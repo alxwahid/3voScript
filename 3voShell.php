@@ -343,6 +343,7 @@ option:hover {
 	color: #000000;
 }
 </style>
+	<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
 <html>
 <head>
 <style type="text/css">
