@@ -2404,11 +2404,11 @@ file_get_contents($file));
         echo "</div>";;
         
 } elseif($_GET['do'] == 'contact') {
-	echo "<center><br><font size='6'>=[ Contact Me ]=</font><br><br>
+	echo "<center><br><font size='6'><=[ Contact Me ]=></font><br><br>
 	<table><td style='background-color: transparent;text-align:center;border: 2px red 
 
 dotted;width:300px;height:250px;'>
-	<font color='gold'>Email : alx.wahid@gmail.com | <a href='https://www.facebook.com/alx.wahid.4' 
+	<font color='gold'>Email : alx.wahid@gmail.com | <a href='https://www.facebook.com/405.phtml' 
 
 target='_blank'>Facebook</font><br></tr></td></table></center>";        
 
