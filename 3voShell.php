@@ -743,22 +743,22 @@ function bing($dork) {
 		echo $domain."\n";
 	}
 }
-function reverse($url) {
-	$ch = curl_init("http://domains.yougetsignal.com/domains.php");
-		  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );
-		  curl_setopt($ch, CURLOPT_POSTFIELDS,  "remoteAddress=$url&ket=");
-		  curl_setopt($ch, CURLOPT_HEADER, 0);
-		  curl_setopt($ch, CURLOPT_POST, 1);
-	$resp = curl_exec($ch);
-	$resp = str_replace("[","", str_replace("]","", str_replace("\"\"","", str_replace(", ,",",", str_replace("{","", str_replace("{","", str_replace("}","", str_replace(", ",",", str_replace(", ",",",  str_replace("'","", str_replace("'","", str_replace(":",",", str_replace('"','', $resp ) ) ) ) ) ) ) ) ) ))));
-	$array = explode(",,", $resp);
-	unset($array[0]);
-	foreach($array as $lnk) {
-		$lnk = "http://$lnk";
-		$lnk = str_replace(",", "", $lnk);
-		echo $lnk."\n";
+
+function reverse() {
+	$response = curl("http://domains.yougetsignal.com/domains.php", TRUE, "remoteAddress=".$GLOBALS['SERVERIP']."&ket=")['response'];
+	$response = str_replace("[","", str_replace("]","", str_replace("\"\"","", str_replace(", ,",",", str_replace("{","", str_replace("{","", str_replace("}","", str_replace(", ",",", str_replace(", ",",",  str_replace("'","", str_replace("'","", str_replace(":",",", str_replace('"','', $response)))))))))))));
+	$explode  = explode(",,", $response);
+	unset($explode[0]);
+
+	foreach($explode as $domain) {
+		$domain = "http://$domain";
+		$domain = str_replace(",", "", $domain);
+		$url[] 	= $domain;
 		ob_flush();
 		flush();
+	}
+
+	return $url;
 }
 
 function curl($url, $post = false, $data = null) {
