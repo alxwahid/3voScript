@@ -603,6 +603,7 @@ function r($dir,$perm) {
 		return "<font color=red>".$perm."</font>";
 	} else {
 		return "<font color=blue>".$perm."</font>";
+		}
 }
 
 function color($bold = 1, $colorid = null, $string = null) {
