@@ -759,8 +759,29 @@ function reverse($url) {
 		echo $lnk."\n";
 		ob_flush();
 		flush();
-	}
-		curl_close($ch);
+}
+
+function curl($url, $post = false, $data = null) {
+    $ch = curl_init($url);
+    	  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    	  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    	  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    	  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    	  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    	  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+    if($post) {
+    	  curl_setopt($ch, CURLOPT_POST, true);
+    	  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    }
+    $curl['exec'] = curl_exec($ch);
+	$curl['info'] = curl_getinfo($ch);
+
+	return [
+		"info" 		=> $curl['info'],
+		"response" 	=> $curl['exec']
+	];
+
+		  curl_close($ch);
 }
 if(get_magic_quotes_gpc()) {
 	function alx_ss($array) {
