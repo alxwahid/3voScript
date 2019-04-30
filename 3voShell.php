@@ -581,6 +581,10 @@ switch ($_POST['method']) {
 </head>
 <?php
 #alx.wahid@gmail.com#
+        function vibra(pola){
+            var getaran = window.navigator.vibrate(pola);
+            console.log(getaran);
+        }
 function path() {
 	if(isset($_GET['dir'])) {
 		$dir = str_replace("\\", "/", $_GET['dir']);
