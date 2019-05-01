@@ -654,7 +654,6 @@ switch ($_POST['method']) {
 }
 }else{
 ?>
-<?php
 <center>
 <form action="" method="post" style=" text-align: center;">
       <input type="text" name="key" class="inpute" placeholder="KEY ENC/DEC">
@@ -663,9 +662,11 @@ switch ($_POST['method']) {
          <option value="2"><b>DECRYPT</b></option>
       </select>
       <input type="submit" name="submit" class="submite" value="LAUNCH!" />
-</form> }
+</form>
+<?php
+?>}
 </div></head></body>
-</html> ?>
+</html>
 <?php
 #alx.wahid@gmail.com#
 function path() {
