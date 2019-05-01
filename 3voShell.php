@@ -668,10 +668,8 @@ switch ($_POST['method']) {
 }?>
 </div>
 </body>
-</html>
-<?php
-?>
 </head>
+</html>
 <?php
 #alx.wahid@gmail.com#
 function path() {
