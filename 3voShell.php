@@ -653,7 +653,6 @@ switch ($_POST['method']) {
    break;
 }
 }else{
-?>
 <center>
 <form action="" method="post" style=" text-align: center;">
       <input type="text" name="key" class="inpute" placeholder="KEY ENC/DEC">
