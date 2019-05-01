@@ -664,12 +664,9 @@ switch ($_POST['method']) {
       </select>
       <input type="submit" name="submit" class="submite" value="LAUNCH!" />
 </form>
-<?php
-}?>
-</div>
-</body>
-</head>
+</div></head></body>
 </html>
+} ?>
 <?php
 #alx.wahid@gmail.com#
 function path() {
