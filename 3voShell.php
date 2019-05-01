@@ -42,6 +42,14 @@ if(!empty($_SERVER['HTTP_USER_AGENT'])) {
         exit;
     }
 }
+function getar() {
+	echo '<script>
+		  window.navigator.vibrate([10, 300, 10]);
+		</script>';
+}
+function alarm() {
+	die("<center><b><font color='#b0b000'>Alarm Aktif..! 🚨 "$warn"</font></b></center>");
+}
 function login_shell() {
 ?>
 <html>
