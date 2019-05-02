@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <?php
+/* PK�J�L404.phpPKPK�J�L404.phpPK57 */
 error_reporting(0);
 $slf = $_SERVER['PHP_SELF'];
 @session_start();
-/* PK�J�L404.phpPKPK�J�L404.phpPK57 */
+
 error_reporting(E_ALL^E_NOTICE);
 error_reporting(E_ALL);
 @error_reporting(0);
