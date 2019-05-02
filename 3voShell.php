@@ -4,7 +4,7 @@
 error_reporting(0);
 $slf = $_SERVER['PHP_SELF'];
 @session_start();
-
+/* FUCK YOUR $YSTEM..! by; @()wAHID */
 error_reporting(E_ALL^E_NOTICE);
 error_reporting(E_ALL);
 @error_reporting(0);
