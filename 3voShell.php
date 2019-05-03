@@ -59,7 +59,16 @@ body {
   margin: 0 auto;
   height: 100%;
 }
-
+#loading-content {
+  border: 3px solid transparent;
+  border-top-color: #4C8BF4;
+  border-bottom-color: #4C8BF4;
+  border-radius: 50%;
+  -webkit-animation: loader 500ms linear infinite;
+  -moz-animation: loader 500ms linear infinite;
+  -o-animation: loader 500ms linear infinite;
+  animation: loader 500ms linear infinite;
+}
 pre {
   padding: 0;
   margin: 0;
@@ -618,7 +627,7 @@ var output = ["1VmMHcxaStBcnBxSC9xQTlmTlJ0aGVmMXJKSHJLRXNLNEk2U",
 "PHP shell injection..."];
     </script>
 </body>
-</html>
+  <div id="loading-content"></div>
 <html>
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
