@@ -1,7 +1,7 @@
 Welcome to 3voScript!
 ==================
 
-Thanks for viewing this script! but there are some rules that should not be ignored:
+Thanks for viewing this Script! But there are some rules that should not be ignored:
 
 - To create a new document, touch File > New
 - To open a document from any file system, touch File > Open
