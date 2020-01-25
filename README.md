@@ -1,7 +1,7 @@
 Welcome to 3voScript!
 ==================
 
-Thanks for view 3voScript! Here is how you can get copy:
+Thanks for viewing this script! but there are some rules that should not be ignored:
 
 - To create a new document, touch File > New
 - To open a document from any file system, touch File > Open
