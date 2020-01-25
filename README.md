@@ -11,5 +11,5 @@ Thanks for viewing this Script! But there are some rules that should not be igno
 - You can use shortcuts such as Ctrl+S for "Save" - click "Volume Up" for Ctrl and "Volume Down" for Alt if your device lacks Ctrl and Alt keys!
 - Don't like the syntax highlighting theme or font? Go to Settings > Appearance
 
-3voScript supports several syntaxes, so all your coding needs should be covered! There are so many other features in Quoda, so be sure to check them all out over at our website:
+3voScript supports several syntaxes, I am not responsible for your problems! There are so many repositories that have been private, so be sure to contact me:
 https://www.facebook.com/403.phtml
