@@ -1,7 +1,7 @@
-Welcome to Quoda!
+Welcome to 3voScript!
 ==================
 
-Thanks for using Quoda! Here is how you can get started:
+Thanks for view 3voScript! Here is how you can get copy:
 
 - To create a new document, touch File > New
 - To open a document from any file system, touch File > Open
@@ -11,5 +11,5 @@ Thanks for using Quoda! Here is how you can get started:
 - You can use shortcuts such as Ctrl+S for "Save" - click "Volume Up" for Ctrl and "Volume Down" for Alt if your device lacks Ctrl and Alt keys!
 - Don't like the syntax highlighting theme or font? Go to Settings > Appearance
 
-Quoda supports several syntaxes, so all your coding needs should be covered! There are so many other features in Quoda, so be sure to check them all out over at our website:
-http://www.getquoda.com/features
+3voScript supports several syntaxes, so all your coding needs should be covered! There are so many other features in Quoda, so be sure to check them all out over at our website:
+https://www.facebook.com/403.phtml
